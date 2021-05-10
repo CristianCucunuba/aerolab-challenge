@@ -8,3 +8,15 @@ export type Product = {
   };
   name: string;
 };
+
+export type User = {
+  id: string;
+  name: string;
+  points: number;
+  redeemHistory: {
+    _id: string;
+    productId: string;
+    createDate: Date;
+  }[];
+  createDate: Date;
+};
